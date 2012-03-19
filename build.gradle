@@ -1,0 +1,42 @@
+apply plugin: 'groovy'
+apply plugin: 'idea'
+apply plugin: 'eclipse'
+
+
+repositories {
+	mavenCentral()
+	maven { url "https://nexus.codehaus.org/content/repositories/snapshots" }
+}
+
+configurations {
+	all {
+		resolutionStrategy {
+			cacheChangingModulesFor 0, 'seconds'
+		}
+	}
+}
+
+dependencies {
+	groovy "org.codehaus.groovy:groovy-all:1.7.10"
+	def gebVersion = "0.7.0-SNAPSHOT"
+	def seleniumVersion = "2.20.0"
+
+	testCompile "org.codehaus.geb:geb-junit4:$gebVersion"
+	testCompile "junit:junit-dep:4.8.2"
+	testCompile "org.seleniumhq.selenium:selenium-firefox-driver:$seleniumVersion"
+}
+
+
+task test(overwrite: true, type: Test) {
+		testReportDir = reporting.file("$name/tests")
+		testResultsDir = file("$buildDir/test-results/$name")
+		
+		systemProperty "geb.build.reportsDir", reporting.file("$name/geb")
+		
+		// If you wanted to set the baseUrl in your build…
+		// systemProperty "geb.build.baseUrl", "http://somesite.com"
+}
+
+task wrapper(type: Wrapper) {
+	gradleVersion = '1.0-milestone-9'
+}
