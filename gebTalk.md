@@ -1,10 +1,8 @@
-
 # Geb Talk 
 
-- me slide
-    - Bob Herrmann, Web Developer @ Innocentive.com     
 
 - Intro and getting started
+    - Me: Bob Herrmann, Web Developer @ Innocentive.com
     - What you are going to get out of this talk
          - What is geb, how to code it, how to run it
          - 
