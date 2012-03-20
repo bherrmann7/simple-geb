@@ -1,21 +1,27 @@
 
-
 # Geb Talk 
 
 - me slide
+    - Bob Herrmann, Web Developer @ Innocentive.com     
 
 - Intro and getting started
     - What you are going to get out of this talk
-    - dangers - unpredictable / unrepeatable (network/cpu/complexity)
+         - What is geb, how to code it, how to run it
+         - 
+    - dangers
+        - browsers behave stragely/inconsistantly
+        - response times can vary
+        - easy to sink lots of time into automating web browser
 
 - Whats the problem?
-    - Web browsers are complicated engines.
-    - HTML, CSS, Javascript, Image Async, file caching
-   
-- Browsers have Console
-    - read from DOM
-    - fire events (click, key)
-    - what if you telneted into the console and wrote tests
+    - Testing web applications is hard
+    - Web browsers are complicated engines (HTML, CSS, images, Javascript)
+
+- Whats the solution?  
+    - talking with the browser (via javascript console)
+        - reading / writting to the DOM  
+        - fire events (click, key)
+    - what if you telneted into the javascript console and wrote tests?
 
 - Picture (Browser w/console)
 - Picture (window.title)
