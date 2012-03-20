@@ -9,6 +9,7 @@
 - Whats the problem?
     - Testing web applications is hard
     - Web browsers are complicated engines (HTML, CSS, images, Javascript)
+    - A web page is a horrid scary mess
 
 - Whats the solution?  
     - talking with the browser (via javascript console)
