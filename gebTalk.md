@@ -5,11 +5,6 @@
     - Me: Bob Herrmann, Web Developer @ Innocentive.com
     - What you are going to get out of this talk
          - What is geb, how to code it, how to run it
-         - 
-    - dangers
-        - browsers behave stragely/inconsistantly
-        - response times can vary
-        - easy to sink lots of time into automating web browser
 
 - Whats the problem?
     - Testing web applications is hard
@@ -27,13 +22,19 @@
 - WebDriver
    http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html
 
+- Dangers of driving a browser (can make Integration tests look reliable)
+    - browsers behave stragely/inconsistantly
+    - response times can vary
+    - easy to sink lots of time into automating web browser
+    - wobbly tempermental tests
+
 - What is Geb?
     - docs http://gebish.org
     - testing in groovy
     - cross browser
     - jquery like API
     - page objects
-    - testing support: Spock, JUnit, TestNG, EasyB and Cucumber (via Cuke4Duke)
+    - testing support: Spock, JUnit, TestNG, EasyB and Cucumber
     - build support: gradle, grails, maven
 
 - simple demo (no page objects)
