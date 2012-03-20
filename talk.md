@@ -17,8 +17,8 @@
         - fire events (click, key)
     - what if you telneted into the javascript console and wrote tests?
 
-- Picture (Browser w/console)
-- Picture (window.title)
+
+![Geb diagram](diagram.png)
  
 - WebDriver
    http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html
