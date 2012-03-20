@@ -12,7 +12,7 @@
     - A web page is a horrid scary mess
 
 - Whats the solution?  
-    - talking with the browser (via javascript console)
+    - talking with the browser (aka like the javascript console)
         - reading / writting to the DOM  
         - fire events (click, key)
     - what if you telneted into the javascript console and wrote tests?
