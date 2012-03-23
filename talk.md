@@ -63,8 +63,15 @@
     - gotcha   http://cnn.com $('a') -> 10 minutes
     - waitFor
 
+         - waitFor(timeoutSeconds, intervalSeconds, Closure condition)
+         - waitFor(timeoutSeconds, Closure condition)
+         - waitFor(Closure condition)
+
+         - examle waitFor { $("p.statusMsg").text() == "Asynchronous Operation Success!" }
 
 - Page Objects
+
+        - creates an API for a web page
 
          import geb.Browser
 
