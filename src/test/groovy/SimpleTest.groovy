@@ -21,6 +21,7 @@ class SimpleTest extends GebReportingTest {
 
         assert title == 'Welcome back'
         assert $('img').size() == 2
+        print 'tom'
     }
 
 }
