@@ -11,7 +11,7 @@ class SimpleTest extends GebReportingTest {
 
     @Test
     void testSimple() {
-        go 'http://jadn.com/s/login'
+        go 'http://localhost:8080/s/login'
 
         assert $('title').text() == 'Taco Login'
 
