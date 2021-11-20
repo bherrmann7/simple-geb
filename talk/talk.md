@@ -24,7 +24,7 @@
    http://dvcs.w3.org/hg/webdriver/raw-file/tip/webdriver-spec.html
 
 - Dangers of driving a browser (can make Integration tests look reliable)
-    - browsers behave stragely/inconsistantly
+    - browsers behave strangely/inconsistantly
     - response times can vary
     - easy to sink lots of time into automating web browser
     - wobbly tempermental tests
